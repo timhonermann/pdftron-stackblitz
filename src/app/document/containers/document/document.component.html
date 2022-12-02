@@ -1,1 +1,8 @@
+<div class="title">
+  <button color="primary" routerLink="/" mat-mini-fab>
+    <mat-icon>home</mat-icon>
+  </button>
+  <h1>Viewer</h1>
+  <mat-spinner *ngIf="isLoading" color="primary" [diameter]="20"></mat-spinner>
+</div>
 <app-pdf-viewer (loaded)="onLoaded()" [fileUrl]="fileUrl"></app-pdf-viewer>
